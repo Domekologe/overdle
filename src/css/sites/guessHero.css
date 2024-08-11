@@ -1,0 +1,64 @@
+.GuessHero {
+  text-align: center;
+  background-image: url("../../assets/img/OWWallpaper.webp");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  color: #fff;
+}
+@font-face {
+  font-family: FrizQuadrataStd;
+  src: url('../../assets/fonts/Friz Quadrata Std Regular.otf') format("opentype");
+}
+.GuessHero *{
+  font-family: FrizQuadrataStd;
+}
+.GuessHero-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.tableContainer{
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.scrollable{
+  overflow-x: scroll;
+}
+.initAgain{
+  position: relative;
+  top: 125px;
+  margin-bottom: 18px;
+  padding: 6px 12px 4px;
+  background-color: #1d2227;
+  color: white;
+  border: solid 2px #0b708a;
+  animation-name: initAgainShow;
+  animation-duration: 0.5s;
+  transition: 0.2s;
+  box-shadow: 3px 3px #074a5b;
+}
+.initAgain:active{
+  box-shadow: 0.2px 0.2px #074a5b;
+}
+.initWin{
+  animation-name: winSpin;
+  animation-duration: 1.5s;
+}
+@keyframes winSpin {
+  0% {transform: rotate(0deg); scale: 1}
+  100% {transform: rotate(360deg); scale: 0}
+}
+@keyframes initAgainShow {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+@media only screen and (min-width: 600px){
+  .scrollable{
+    overflow-x: unset;
+  }
+}
+
+

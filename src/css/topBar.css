@@ -1,0 +1,88 @@
+#top{
+	width:100%;
+	top: 100px;
+	position: relative;
+    display: flex;
+    justify-content: center;
+}
+#topBar{
+    position: relative;
+    
+	background: #1d2227;
+	padding: 15px 15px 13px;
+    border: 2px solid #0b708a;
+	width: 300px;
+	height:100px;
+}
+
+#topBarAbi{
+    position: relative;
+	background: #1d2227;
+	padding: 15px 15px 13px;
+    border: 2px solid #0b708a;
+	width: 300px;
+	height:100px;
+	
+}
+
+#topBarSplash{
+    position: relative;
+	background: #1d2227;
+	padding: 15px 15px 13px;
+    border: 2px solid #0b708a;
+	width: 500px;
+	height:400px;
+}
+
+#topBarHeader{
+	width:100%;
+	padding-bottom: 10px;
+	display: flex;
+    justify-content: center;
+}
+
+.hint{
+	width:33%;
+}
+
+#hint1cont,#hint2cont,#hint3cont{
+	color:orange;
+}
+
+.hint img{
+	width:50%;
+}
+
+.hint-grey {
+    filter: grayscale(1);
+}
+
+.hint-active {
+    filter: grayscale(0);
+	cursor: pointer;
+}
+
+#abiImg{
+	width:75px;
+	height:75px;
+}
+
+#splashImg{
+	width:500px;
+	height:350px;
+	transition: transform 0.5s ease;
+}
+
+.zoom {
+    transform: scale(10) translate(-20%, -20%);
+}
+
+.zoom-normal {
+    transform: scale(1) translate(0, 0);
+}
+#splashImageFrame {
+    position: relative;
+    width: 100%; /* Anpassen, um das Bild im Container zu halten */
+    height: 300px; /* Oder eine andere Höhe, die du bevorzugst */
+    overflow: hidden; /* Wichtig, um zu verhindern, dass das Bild über den Container hinausgeht */
+}

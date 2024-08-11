@@ -1,0 +1,121 @@
+#mainContainer{
+	position: absolute;
+	background: url('../assets/img/OWWallpaper.webp');
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	overflow:hidden;
+	top:0;
+	left:0;
+	z-index:0;
+}
+
+#shadowBox{
+	position: absolute;
+	
+	width: 100%;
+	height: 100%;
+	overflow:hidden;
+	top:0;
+	left:0;
+	z-index:1;
+}
+
+#mainMenu{
+	position: absolute;
+	background-color: rgba(0,0,0,0.8);
+	width: 40%;
+	height: 60%;
+	overflow:hidden;
+	top:20%;
+	left:30%;
+	z-index:2;
+	-webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+	-webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-duration: var(--animate-duration);
+    animation-duration: var(--animate-duration);
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.buttonGame{
+	width: 100%;
+	margin: auto;
+	color:white;
+	text-align:center;
+	font-family: Friz Quadrata Std, Mobilo, Helvetica, Arial;
+	display: flex;
+	padding-bottom:10px;
+}
+
+#buttonImage{
+	border: 0;
+    cursor: pointer;
+    font-weight: 600;
+    margin:auto;
+    text-align: left;
+    transition: all .1s ease-in-out;
+    max-width: 370px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    color: #fff;
+	height: 75px;
+	width:100%;
+}
+
+#buttonImage:Hover{
+	max-width: 380px;
+}
+
+.buttonHelp{
+	display: flex;
+	justify-content:center;
+}
+
+a{
+	text-decoration: none;
+}
+
+.buttonHero{
+	background: url('../media/buttons/ButtonClassic.webp');
+	background-size: cover;
+}
+.buttonQuote{
+	background: url('../media/buttons/ButtonQuote.webp');
+	background-size: cover;
+}
+.buttonAbi{
+	background: url('../media/buttons/ButtonAbility.webp');
+	background-size: cover;
+}
+.buttonArt{
+	background: url('../media/buttons/ButtonSplash.webp');
+	background-size: cover;
+}
+.buttonMap{
+	background: url('../media/buttons/ButtonSplash.webp');
+	background-size: cover;
+}
+
+#topHead{
+	height:100px;
+	width: 100%;
+}
+
+#buttonSubject{
+	font-size: 22px;
+	color: orange;
+	position: absolute;
+    top: 9px;
+    left: 105px;
+}
+
+#buttonHelp{
+	font-size: 12px;
+	position: absolute;
+    left: 105px;
+	bottom:20px;
+}
